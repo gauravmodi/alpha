@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160118154414) do
+ActiveRecord::Schema.define(version: 20160124151859) do
 
   create_table "categories", force: :cascade do |t|
     t.text     "name"
@@ -40,6 +40,9 @@ ActiveRecord::Schema.define(version: 20160118154414) do
     t.text     "facebook"
     t.text     "twitter"
     t.text     "linkedin"
+    t.string   "slug"
   end
+
+  add_index "companies", ["slug"], name: "index_companies_on_slug"
 
 end
