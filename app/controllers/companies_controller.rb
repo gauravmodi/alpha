@@ -1,7 +1,9 @@
 class CompaniesController < ApplicationController
   def index
-    @companies = Company.all
-    @categories = Category.all
+    @search = Company.search do
+      fulltext params[:search]
+    end
+    @companies = @search.results
   end
 
   def show
