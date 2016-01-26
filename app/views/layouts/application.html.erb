@@ -16,8 +16,8 @@
   
   border-radius: 0 !important;
   margin: 0px !important;
-  background-color: #ECF0F1;
-  color: black;
+  background-color: #394258;
+  color: white;
   
 
 }
@@ -30,20 +30,21 @@
 
 .search-banner {
   
-  background-color: #2C3E50;
+  background-color: #394258;
   padding: 0;
   margin: 10px 0 !important;
+  height: 60px;
 }
 
 .search-query {
   
   border-radius: 0px;
   border: solid 0.3em;
-  border-color: grey;
+  border-color: #394258;
   //padding: 20px 10px;
   font-size: 1.6rem;
-  color: red;
-  height: 40px;    
+  color: black;
+  height: 60px;    
   
 }
 .content-section {
@@ -56,8 +57,7 @@
 
 .category-filter {
   
-  background-color: blue;
-  margin: 0px !important;
+  background-color: #F7F7F7;
   padding: 20px 0;
   
 }
@@ -71,14 +71,14 @@
 .total-companies{
   
   margin: 0px 0 !important;
-  color: white;
+  color: black;
   
 }
 
 .data-list {
   
   padding: 0px 0;
-  background-color: blue;
+  background-color: #F7F7F7;
   
 }
 
@@ -93,9 +93,13 @@
   padding: 10px 30px;
   border: solid;
   border-width: 0 0 5px 0;
-  border-color: red;
+  border-color: #394258;
   background-color: white;
   
+}
+
+.img-center {
+    margin: 0 auto;
 }
 
 </style>
@@ -112,7 +116,7 @@
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
 	      </button>
-	      <a class="navbar-brand" href="#">MoonShot</a>
+	      <a class="navbar-brand" href="/">MoonShot</a>
 	    </div>
 
 	    <!-- Collect the nav links, forms, and other content for toggling -->
@@ -140,8 +144,8 @@
 	        <button type="submit" class="btn btn-default">Submit</button>
 	      </form> -->
 	      <ul class="nav navbar-nav navbar-right">
-	        <li><a href="#">About</a></li>
-	        <li><a href="#">Contact</a></li>
+	        <li><%= link_to 'About', page_path('about') %></li>
+	        <li><%= link_to 'Contact', page_path('contact') %></li>
 	        <!-- <li class="dropdown">
 	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
 	          <ul class="dropdown-menu">
@@ -158,6 +162,21 @@
 	</nav>
 
 <%= yield %>
+	<!-- Footer Starts-->
+  
+  <footer class="footer">
+  	<div class="container">
+      <div class="row">
+          <div class="col-lg-12">
+        		<hr>
+            <p class="text-muted">Copyright &copy; MoonShot.in 2016</p>
+          </div>
+          <!-- /.col-lg-12 -->
+      </div>
+      <!-- /.row -->
+    </div>
+  </footer>
 
+	<!-- Footer Ends -->
 </body>
 </html>
