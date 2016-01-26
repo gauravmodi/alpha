@@ -6,6 +6,8 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-Company.create(name: 'Nexus Partners', description: 'This is the world of countless, infinite VCs.')
-Company.create(name: 'Matrix Partners', description: 'Your next door VC')
+# Company.create(name: 'Nexus Partners', description: 'This is the world of countless, infinite VCs.')
+# Company.create(name: 'Matrix Partners', description: 'Your next door VC')
+# catogories = Category.create([{ name: 'Accelerator' }])
+  
 

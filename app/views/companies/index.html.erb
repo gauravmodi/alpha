@@ -1,5 +1,11 @@
 <h1>All Companies</h1>
 
+<% @categories.each do |category|  %>
+	<li>
+		<%= category  %>
+	</li>
+<% end%>
+
 <ul class="companies">
 	<% @companies.each do |company| %>
 		<li>
