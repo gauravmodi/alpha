@@ -12,6 +12,7 @@ gem 'friendly_id'
 gem 'sunspot_rails'
 gem 'sunspot_solr'
 gem 'progress_bar'
+gem 'high_voltage', '~> 2.4.0'
 
 group :development, :test do
   gem 'sqlite3'
