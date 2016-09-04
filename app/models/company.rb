@@ -9,10 +9,10 @@ class Company < ActiveRecord::Base
   has_many :categorizations
   has_many :categories, :through => :categorizations
 
-  searchable do 
-    text :name, :boost => 5
-    text :description
-  end
+  # searchable do 
+  #   text :name, :boost => 5
+  #   text :description
+  # end
 
 
 
